@@ -306,3 +306,62 @@ header .points2 {
 }
 
 /* Fin header */
+
+/* Servicios */
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /*Sirve para que los elementos con display flex ocupen varias lineas*/
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  min-height: 520px;
+  background-color: var(--light-three);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 1rem 0.8rem;
+  overflow: hidden;
+  border: solid 1px var(--dark-two);
+  border-radius: 5%;
+}
+
+.card:before {
+  content: attr(data-card);
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--main-color);
+  opacity: 0.025;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  transition: 0.3s;
+}
+
+.icon {
+  width: 90px;
+  margin-bottom: 1.7rem;
+}
+
+.card .title-sm {
+  line-height: 0.8;
+}
+
+.card .text {
+  font-size: 1.15rem;
+  margin: 1.8rem 0;
+}
+
+/* Fin Servicios */
